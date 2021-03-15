@@ -147,3 +147,11 @@ def get_oldest_cat(*args):
 # Output
 print(
     f"The oldest cat is {get_oldest_cat(peanut.age, garfield.age, snickers.age)} years old.")
+
+
+# OBJECT INTROSPECTION
+# ability to determine the type of an object at runtime(when the code is running)
+print(dir(wiz))  # prints all the methods and attributes available to an object
+
+
+# DUNDER METHODS
