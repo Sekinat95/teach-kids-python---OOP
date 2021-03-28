@@ -22,3 +22,11 @@ class PlayerClass:
 
     def sayHello(self):
         print(f'hello {self.name}')
+
+
+# ABSTRACTION
+mydict = dict()
+mydict['key1'] = True
+mydict['key2'] = 23
+# print(mydict)
+print(mydict.keys())
