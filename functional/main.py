@@ -13,8 +13,11 @@ a doubling functon wil always result in [2, 6]
 """
 # examples
 
+# parse
 
 # yes, a pure func
+
+
 def multiplyBy2_(list1):
     new_list = []
     for i in list1:
@@ -22,7 +25,8 @@ def multiplyBy2_(list1):
         new_list.append(i)
     return new_list
 
-# no
+
+print(multiplyBy2_([1, 2]))
 
 
 def multiplyBy2(list1):

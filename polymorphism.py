@@ -25,9 +25,10 @@ class Archar(User):
 
 wiz = Wizard("ted", 69)
 arch = Archar('jon', 33)
+tomato = Wizard("tomato", 789)
 # isinstance(instamce, class)
 print(isinstance(wiz, object))  # True
 wiz.signin()
 
-for i in [wiz, arch]:
+for i in [wiz, arch, tomato]:
     i.attack()

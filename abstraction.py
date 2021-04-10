@@ -39,3 +39,5 @@ _age
 this lets other programmers know not to chnage these variables because they are private
 other programming languages have better ways of managing this with the private and public keywords
 """
+list1 = [1, 2]
+list1.append(3)
