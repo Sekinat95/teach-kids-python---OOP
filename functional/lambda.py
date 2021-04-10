@@ -1,11 +1,13 @@
 """
 used when we only need to use a fucntion once
 they are anonymous fucntions
+
+lambda functions are used with higher functuons
 """
 # lambda data: return action on data
-
-
 from functools import reduce
+
+# parse
 
 
 def multiplyBy2_(item):

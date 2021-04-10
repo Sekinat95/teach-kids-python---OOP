@@ -1,50 +1,67 @@
+"""
+HIGHER FUNCTIONS:
+ they accept other functions as arguments
+"""
 #map, filter, zip, reduce
 
 # MAP
 
+# from functools import reduce
+# # map() filter() zip() reduce()
 
-from functools import reduce
-
-
-def multiplyBy2(list1):
-    new_list = []
-    for i in list1:
-        i = i*2
-        new_list.append(i)
-    return new_list
+"""
+MAP: is a higher function that manipulates 
+an itrable with a fucntion  and returns a new item at  each iteration 
+"""
 
 
-def multiplyBy2_(item):
+def shortFunct():
+    return True
+
+
+# def multiplyBy2(list1):
+#     new_list = []
+#     for i in list1:
+#         i = i*2
+#         new_list.append(i)
+#     return new_list
+
+
+def multiplyBy2(item):
     return item*2
 
 
-print(multiplyBy2([1, 3]))
+#print(multiplyBy2([1, 3]))
 # returns the same thing as when we use the first func
-print(list(map(multiplyBy2_, [1, 3])))
+mylist = list()
 
-# FILTER
-
-
-def checkOdd(item):
-    return item % 2 == 1
+print(list(map(multiplyBy2, [2, 3, 5])))
+print(tuple(map(multiplyBy2, [2, 3, 5])))
 
 
-print(list(filter(checkOdd, [1, 3, 4, 6])))
-
-# ZIP
-mylist = [1, 2, 4]
-yourlist = [10, 20, 40]
-theirlist = [-1, -2, -4]
-# you can put any number of iterable you want
-print(list(zip(mylist, yourlist, theirlist)))
+# # FILTER
 
 
-# REDUCE
-#from functools import reduce
-
-def accumulator(acc, item):
-    return acc + item
+# def checkOdd(item):
+#     return item % 2 == 1
 
 
-# func, iterable, init val
-print(reduce(accumulator, mylist, 0))  # ADDS up the items in [1,2,4] --> 7
+# print(list(filter(checkOdd, [1, 3, 4, 6])))
+
+# # ZIP
+# mylist = [1, 2, 4]
+# yourlist = [10, 20, 40]
+# theirlist = [-1, -2, -4]
+# # you can put any number of iterable you want
+# print(list(zip(mylist, yourlist, theirlist)))
+
+
+# # REDUCE
+# #from functools import reduce
+
+# def accumulator(acc, item):
+#     return acc + item
+
+
+# # func, iterable, init val
+# print(reduce(accumulator, mylist, 0))  # ADDS up the items in [1,2,4] --> 7

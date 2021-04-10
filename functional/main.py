@@ -17,6 +17,10 @@ a doubling functon wil always result in [2, 6]
 
 # yes, a pure func
 
+# EX1
+# parse
+# iterable
+
 
 def multiplyBy2_(list1):
     new_list = []
@@ -41,16 +45,18 @@ def multiplyBy2(list1):
 multiplyBy2([1, 3])
 # is this a pure function?? no
 
-new_list_ = []
+# new_list_ = []
 
-# no
+# # no
 
 
-def multiplyBy2__(list1):
+# def multiplyBy2__(list1):
 
-    for i in list1:
-        i = i*2
-        # becasue the print intercats with the outside world
-        new_list_.append(i)
+#     for i in list1:
+#         i = i*2
+#         new_list_.append(i)
 
-    return new_list
+#     return new_list_
+
+
+# print(multiplyBy2__([1, 2]))
