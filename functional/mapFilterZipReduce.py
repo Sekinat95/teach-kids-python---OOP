@@ -64,13 +64,25 @@ london                  germany
 khartoum                uk
 accra                   nigeria
 dubai                   sudan
-berlin                  
+berlin                  egypt
+"""
 
+"""
+EX: map()
+
+1. here you're given this iterable, a list ==> [4, 7, 11]
+2. for each item in the list, subtract 5
+3. return the new list. solve this question using the map() fucntion
+
+#hint:
+ create a small fucntion called subtractFive()
+ then do this: map(subtractFive, [4, 7, 11])
 """
 
 # #print(multiplyBy2([1, 3]))
 # # returns the same thing as when we use the first func
 # mylist = list()
+
 
 # print(list(map(multiplyBy2, [2, 3, 5])))
 # print(tuple(map(multiplyBy2, [2, 3, 5])))
