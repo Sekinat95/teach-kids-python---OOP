@@ -31,12 +31,49 @@ def multiplyBy2(item):
     return item*2
 
 
-#print(multiplyBy2([1, 3]))
-# returns the same thing as when we use the first func
-mylist = list()
+"""
+an example of where map might be useful:
+1. when you are trying to generate an iterable from an exsiting one by altering the existing one in some way.
+ e.g if the original iterable, in this case, a list is ==> [1,2,3]
+ and I'm trying to generate a new list of all elements in the old list + 10
+  
+  simple algorithm for that is:
+  1. get each item in the old list 
+  2. add 10 to each of those items
+  3. append to a new list the result of each of your addition
 
-print(list(map(multiplyBy2, [2, 3, 5])))
-print(tuple(map(multiplyBy2, [2, 3, 5])))
+  ecpected result ==> [1+10, 2+10, 3+10] = [11, 12, 13]
+
+"""
+################
+
+
+def sqrroot(item):
+    import math
+    return math.sqrt(item)
+
+
+print(list(map(sqrroot, [25, 16, 9])))
+
+"""
+random locations  |  country
+
+abuja                   ghana
+cairo                   uae
+london                  germany
+khartoum                uk
+accra                   nigeria
+dubai                   sudan
+berlin                  
+
+"""
+
+# #print(multiplyBy2([1, 3]))
+# # returns the same thing as when we use the first func
+# mylist = list()
+
+# print(list(map(multiplyBy2, [2, 3, 5])))
+# print(tuple(map(multiplyBy2, [2, 3, 5])))
 
 
 # # FILTER

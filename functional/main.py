@@ -45,18 +45,18 @@ def multiplyBy2(list1):
 multiplyBy2([1, 3])
 # is this a pure function?? no
 
-# new_list_ = []
+new_list_ = []
 
-# # no
-
-
-# def multiplyBy2__(list1):
-
-#     for i in list1:
-#         i = i*2
-#         new_list_.append(i)
-
-#     return new_list_
+# no
 
 
-# print(multiplyBy2__([1, 2]))
+def multiplyBy2__(list1):
+
+    for i in list1:
+        i = i*2
+        new_list_.append(i)
+
+    return new_list_
+
+
+print(multiplyBy2__([1, 2]))
