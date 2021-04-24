@@ -19,6 +19,11 @@ def shortFunct():
     return True
 
 
+def myfunc():
+    # type your code
+    pass
+
+
 # def multiplyBy2(list1):
 #     new_list = []
 #     for i in list1:
@@ -30,6 +35,8 @@ def shortFunct():
 def multiplyBy2(item):
     return item*2
 
+
+print(list(map(multiplyBy2, [25, 16, 9])))
 
 """
 an example of where map might be useful:
@@ -77,6 +84,18 @@ EX: map()
 #hint:
  create a small fucntion called subtractFive()
  then do this: map(subtractFive, [4, 7, 11])
+"""
+
+"""
+EX2: map()
+
+1. here you're given this iterable, a list ==> [4, 7, 11]
+2. for each item in the list, find the cube of it (i.e: item^3)
+3. return the new list. solve this question using the map() fucntion
+
+#hint:
+ create a small fucntion called powerThree
+ then do this: map(powerThree, [4, 7, 11])
 """
 
 # #print(multiplyBy2([1, 3]))
