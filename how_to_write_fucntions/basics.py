@@ -16,17 +16,34 @@ mylist = [8, 2, 3, 0, 7]
 def addListElements(list1):
     sumElem = 0
     for i in list1:
-
-        sumElem += i
+        #sumElem += i
+        sumElem = i + sumElem
 
     return sumElem
 
 
 print(addListElements(mylist))
 
+# Qts 3
+# Write a Python function to multiply all the numbers in a list. Sample List : (8, 2, 3, -1, 7)
+mylist2 = [8, 2, 3, -1, 7]
 
-# find the area of a rectangle
-# l * b
+
+def multiplyListElements(list1):
+    total = 1
+    for i in list1:
+
+        #total *= i
+        total = i * total
+
+    return total
+
+
+print(multiplyListElements(mylist2))
+
+# Qts 3c&d
+# c. Write a Python function to subtract all the numbers in a list. Sample List : (8, 2, 3, -1, 7)
+# d. Write a Python function to divide all the numbers in a list. Sample List : (8, 2, 3, -1, 7)
 
 
 def areaofRectangle(l, b):
